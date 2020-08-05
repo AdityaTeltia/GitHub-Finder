@@ -67,11 +67,11 @@ class UI {
         //Add text
         div.appendChild(document.createTextNode(message));
         //Get Parent
-        const container = document.querySelector('searchContainer');
+        const container = document.querySelector('.searchContainer');
         //Get search box
-        const search = document.querySelector('search');
+        const search = document.querySelector('.search');
         //Insert alert
-        container.insertBefore(div,search);
+        container.insertBefore(div, search);
 
         // Timeout after 3sec
         setTimeout(()=>{
@@ -82,7 +82,7 @@ class UI {
 
     // Clear alert MEssage
     clearAlert(){
-        const currentAlert = document.querySelector('alert');
+        const currentAlert = document.querySelector('.alert');
         if(currentAlert){
             currentAlert.remove()
         }
